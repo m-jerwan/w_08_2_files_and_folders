@@ -1,3 +1,4 @@
+import db.DBHelper;
 import models.File;
 import models.Folder;
 
@@ -12,11 +13,16 @@ public class Runner {
 
 
         folder_1 = new Folder("Documents");
+        DBHelper.save(folder_1);
 
         file_1= new File("holidayPicture_01", ".jpg", 2003, folder_1);
+        DBHelper.save(file_1);
         file_2= new File("retouched_holiday_pic", ".psd", 40120, folder_1);
+        DBHelper.save(file_2);
         file_3= new File("CV Marcin", ".txt", 150, folder_1);
+        DBHelper.save(file_3);
         file_4= new File("sysFile", ".cfg", 10, folder_1);
+        DBHelper.save(file_4);
 
 
 
