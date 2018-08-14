@@ -10,7 +10,7 @@ public class File {
     private String name;
     private String extension;
     private int size;
-//    private Folder folder;
+    private Folder folder;
 
     public File() {
     }
@@ -20,7 +20,7 @@ public class File {
         this.name = name;
         this.extension = extension;
         this.size = size;
-//        this.folder = folder;
+        this.folder = folder;
     }
 
     @Id
@@ -45,11 +45,11 @@ public class File {
         return size;
     }
 
-//    @ManyToOne
-//    @JoinColumn(name = "folder_id", nullable = false)
-//    public Folder getFolder() {
-//        return folder;
-//    }
+    @ManyToOne
+    @JoinColumn(name = "folder_id", nullable = false)
+    public Folder getFolder() {
+        return folder;
+    }
 
 
     public void setId(int id) {
@@ -68,7 +68,7 @@ public class File {
         this.size = size;
     }
 
-//    public void setFolder(Folder folder) {
-//        this.folder = folder;
-//    }
+    public void setFolder(Folder folder) {
+        this.folder = folder;
+    }
 }

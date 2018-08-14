@@ -10,7 +10,7 @@ import java.util.List;
 public class Folder {
     private int id;
     private String title;
-//    private List<File> files;
+    private List<File> files;
 
     public Folder() {
     }
@@ -18,7 +18,7 @@ public class Folder {
     public Folder(String title) {
         this.id = id;
         this.title = title;
-//        this.files = files;
+        this.files = files;
     }
 
     @Id
@@ -33,10 +33,10 @@ public class Folder {
         return title;
     }
 
-//    @OneToMany(mappedBy = "file", fetch = FetchType.LAZY)
-//    public List<File> getFiles() {
-//        return files;
-//    }
+    @OneToMany(mappedBy = "folder", fetch = FetchType.LAZY)
+    public List<File> getFiles() {
+        return files;
+    }
 
 
     public void setId(int id) {
@@ -47,7 +47,7 @@ public class Folder {
         this.title = title;
     }
 
-//    public void setFiles(List<File> files) {
-//        this.files = files;
-//    }
+    public void setFiles(List<File> files) {
+        this.files = files;
+    }
 }
