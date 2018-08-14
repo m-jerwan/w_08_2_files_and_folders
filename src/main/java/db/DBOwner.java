@@ -1,32 +1,35 @@
 package db;
 
-import models.File;
 import models.Folder;
+import models.Owner;
 import org.hibernate.Criteria;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
-import org.hibernate.Transaction;
 import org.hibernate.criterion.Restrictions;
 
 import java.util.List;
 
-public class DBFolder {
+public class DBOwner {
+
     private static Session session;
 
 
-    public static List<File> getAllFilesFromAFolder(Folder folder){
+    public static List<Folder> getAllFoldersFromOwner(Owner owner){
         session = HibernateUtil.getSessionFactory().openSession();
-        List<File> result = null;
+        List<Folder> result = null;
 
         try{
-            Criteria cr = session.createCriteria(File.class);
-            cr.add(Restrictions.eq("folder", folder));
+            Criteria cr = session.createCriteria(Owner.class);
+            cr.add(Restrictions.eq("owner", owner));
             result = cr.list();
-        }catch (HibernateException ex){
+
+        }catch (HibernateException  ex){
             ex.printStackTrace();
-        }finally {
+        } finally {
             session.close();
         }
         return result;
     }
+
+
 }

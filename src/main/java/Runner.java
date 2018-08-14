@@ -1,5 +1,6 @@
 import db.DBFolder;
 import db.DBHelper;
+import db.DBOwner;
 import models.File;
 import models.Folder;
 import models.Owner;
@@ -17,10 +18,12 @@ public class Runner {
         File file_4;
         Owner owner_1;
 
+        owner_1 = new Owner("John", "Smith");
+        DBHelper.save(owner_1);
 
-        folder_1 = new Folder("Documents");
+        folder_1 = new Folder("Documents", owner_1);
         DBHelper.save(folder_1);
-        folder_2 = new Folder("System");
+        folder_2 = new Folder("System", owner_1);
         DBHelper.save(folder_2);
 
 
@@ -42,9 +45,9 @@ public class Runner {
         File resultOne = DBHelper.findById(3, File.class);
         List<File> resultMany = DBHelper.findAll(File.class);
         List<File> resultFromFolder = DBFolder.getAllFilesFromAFolder(folder_1);
+        List<Folder> resultFromOwner = DBOwner.getAllFoldersFromOwner(owner_1);
 
-        owner_1 = new Owner("John", "Smith");
-        DBHelper.save(owner_1);
+
 
 
     }
