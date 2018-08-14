@@ -2,6 +2,7 @@ import db.DBFolder;
 import db.DBHelper;
 import models.File;
 import models.Folder;
+import models.Owner;
 
 import java.util.List;
 
@@ -14,6 +15,7 @@ public class Runner {
         File file_2;
         File file_3;
         File file_4;
+        Owner owner_1;
 
 
         folder_1 = new Folder("Documents");
@@ -40,5 +42,10 @@ public class Runner {
         File resultOne = DBHelper.findById(3, File.class);
         List<File> resultMany = DBHelper.findAll(File.class);
         List<File> resultFromFolder = DBFolder.getAllFilesFromAFolder(folder_1);
+
+        owner_1 = new Owner("John", "Smith");
+        DBHelper.save(owner_1);
+
+
     }
 }
