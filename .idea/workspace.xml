@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fdf5f08e-3257-462b-884f-d3c34a31c416" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/db/DBFolder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Runner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/db/DBHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/db/DBHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/File.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/File.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/Folder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Folder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/models/File.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/models/File.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/models/Folder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/models/Folder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Runner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Runner.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -28,41 +25,69 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1704" />
-          <entry key="txt" value="141" />
+          <entry key="java" value="2085" />
+          <entry key="txt" value="178" />
           <entry key="xml" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1704" />
-          <entry key="PLAIN_TEXT" value="141" />
+          <entry key="JAVA" value="2085" />
+          <entry key="PLAIN_TEXT" value="178" />
           <entry key="XML" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="20" />
+          <entry key="java" value="33" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="20" />
+          <entry key="JAVA" value="33" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.50416666">
+    <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/java/db/DBHelper.java">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/models/File.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1206">
-                  <caret line="89" column="22" selection-start-line="89" selection-start-column="22" selection-end-line="89" selection-end-column="22" />
+                <state relative-caret-position="457">
+                  <caret line="47" column="14" lean-forward="true" selection-start-line="47" selection-start-column="14" selection-end-line="47" selection-end-column="14" />
+                  <folding>
+                    <element signature="method#File#0;class#File#0" />
+                    <element signature="e#977#978#0" expanded="true" />
+                    <element signature="e#1006#1007#0" expanded="true" />
+                    <element signature="e#1345#1346#0" expanded="true" />
+                    <element signature="e#1381#1382#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/db/DBFolder.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="450">
+                  <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/models/Folder.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state>
+                  <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -77,8 +102,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/Runner.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="450">
-                  <caret line="30" column="30" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
+                <state relative-caret-position="630">
+                  <caret line="42" selection-start-line="42" selection-end-line="42" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -110,6 +135,7 @@
         <option value="$PROJECT_DIR$/src/main/java/models/File.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/Folder.java" />
         <option value="$PROJECT_DIR$/src/main/java/db/DBHelper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/db/DBFolder.java" />
         <option value="$PROJECT_DIR$/src/main/java/Runner.java" />
       </list>
     </option>
@@ -191,7 +217,8 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534279210275" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534279908081" />
+    <property name="full.screen.before.presentation.mode" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -251,7 +278,14 @@
       <option name="project" value="LOCAL" />
       <updated>1534278057342</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="CRUD for DB Helper done.">
+      <created>1534279281081</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1534279281081</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -263,16 +297,16 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.15" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" weight="0.32891566" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.32798165" />
+      <window_info anchor="bottom" id="Messages" weight="0.3278496" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.33715597" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39908257" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3983549" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -291,14 +325,15 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="hibernate creating db data properly. classes not yet connected Many to one" />
-    <option name="LAST_COMMIT_MESSAGE" value="hibernate creating db data properly. classes not yet connected Many to one" />
+    <MESSAGE value="CRUD for DB Helper done." />
+    <option name="LAST_COMMIT_MESSAGE" value="CRUD for DB Helper done." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Runner.java</url>
-          <line>34</line>
+          <line>42</line>
           <properties />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
@@ -334,10 +369,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/db/DBHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="50" column="31" selection-start-line="50" selection-start-column="31" selection-end-line="50" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/Folder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/models/File.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="70" selection-start-line="70" selection-end-line="72" selection-end-column="5" />
+        <state relative-caret-position="457">
+          <caret line="47" column="14" lean-forward="true" selection-start-line="47" selection-start-column="14" selection-end-line="47" selection-end-column="14" />
           <folding>
             <element signature="method#File#0;class#File#0" />
             <element signature="e#977#978#0" expanded="true" />
@@ -348,20 +403,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/Folder.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/db/DBFolder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/db/DBHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1206">
-          <caret line="89" column="22" selection-start-line="89" selection-start-column="22" selection-end-line="89" selection-end-column="22" />
+        <state relative-caret-position="450">
+          <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -370,8 +415,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Runner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="30" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
+        <state relative-caret-position="630">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

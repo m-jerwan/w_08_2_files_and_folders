@@ -1,3 +1,4 @@
+import db.DBFolder;
 import db.DBHelper;
 import models.File;
 import models.Folder;
@@ -8,6 +9,7 @@ public class Runner {
 
     public static void main(String[] args) {
         Folder folder_1;
+        Folder folder_2;
         File file_1;
         File file_2;
         File file_3;
@@ -16,6 +18,9 @@ public class Runner {
 
         folder_1 = new Folder("Documents");
         DBHelper.save(folder_1);
+        folder_2 = new Folder("System");
+        DBHelper.save(folder_2);
+
 
         file_1= new File("holidayPicture_01", ".jpg", 2003, folder_1);
         DBHelper.save(file_1);
@@ -29,8 +34,11 @@ public class Runner {
         DBHelper.save(file_4);
 
         DBHelper.delete(file_3);
+        file_4.setFolder(folder_2);
+        DBHelper.update(file_4);
 
         File resultOne = DBHelper.findById(3, File.class);
         List<File> resultMany = DBHelper.findAll(File.class);
+        List<File> resultFromFolder = DBFolder.getAllFilesFromAFolder(folder_1);
     }
 }
